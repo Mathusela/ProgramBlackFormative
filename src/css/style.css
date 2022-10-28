@@ -1,0 +1,53 @@
+.hamburger-icon, .hamburger-icon::before, .hamburger-icon::after {
+	background: white;
+	width: 2rem;
+	height: 0.2rem;
+	border-radius: 100px;
+	position: relative;
+	z-index: 1;
+}
+
+.hamburger-icon::before, .hamburger-icon::after {
+	content: "";
+	position: absolute;
+	left: 0;
+}
+
+.hamburger-icon, .hamburger-icon::after {
+	transition: transform 0.3s, top 0.3s;
+}
+
+.hamburger-icon::before {
+	top: -0.5rem;
+	transition: opacity 0.3s;
+}
+
+.hamburger-icon::after {
+	top: 0.5rem;
+}
+
+.icon-clickable {
+	position: absolute;
+	width: 2rem;
+	height: calc(0.2rem*3 + 0.5rem*2);
+	top: calc((0.2rem*3 + 0.5rem*2)/-2);
+	left: 0rem;
+}
+
+#navbar-toggle:checked+label>.hamburger-icon::before {
+	opacity: 0;
+}
+
+#navbar-toggle:checked+label>.hamburger-icon::after {
+	transform: rotate(90deg);
+	top: 0;
+}
+
+#navbar-toggle:checked+label>.hamburger-icon {
+	transform: rotate(-45deg);
+	top: 0;
+}
+
+#navbar-toggle {
+	display: none;
+}
