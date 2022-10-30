@@ -10,19 +10,15 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-<!-- <link href="C:\Users\josht\OneDrive - Durham University\Computing\bootstrap-5.2.2-examples\bootstrap-5.2.2-examples\assets\dist\css\bootstrap.min.css" rel="stylesheet"> -->
-
-
 <!-- Custom styles for this template -->
 <link href="C:\Users\josht\OneDrive - Durham University\Computing\bootstrap-5.2.2-examples\bootstrap-5.2.2-examples\carousel\carousel.css" rel="stylesheet">
-<link href="techstyleSpecific.css">
+<link href="styleSpecific.css" rel="stylesheet">
 <body>
 
 <header>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 <div class="container-fluid">
-  <a class="navbar-brand" href="#">Agriculture
-  </a>
+  <a class="navbar-brand" href="#">Agriculture</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -113,7 +109,18 @@
       <li>This includes automatic crop harvesting, photography and many other features...</li>
     </ul>
     </ul>
-    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+    <p class="btnWrapDetails"><a class="btn btn-secondary" href="#" onClick="insertDetails('Drone')">View details &raquo;</a></p>
+    <div class="extraDetails" id="Drone">
+      <p>Drones assist in making farming more efficient by equipping farmers with precise data, such as:</p>
+      <ul>
+        <li>Irrigation levels</li>
+        <li>Amount of chemical needed on a field for pest management</li>
+        <li>Images</li>
+        <li>etc.</li>
+      </ul>
+      <img src="C:\Users\josht\OneDrive - Durham University\Computing\Practical Black\How Tech has Impacted Agriculture\ProgramBlackFormative\dronePros.PNG" alt="Advantages of Drone Farming">
+    <p class="reference">Suwandej, N. et al. (2022) “The efficiency of using drones to reduce farming costs and yields,” Journal of Positive School Psychology, 6(5), pp. 1412–1424. </p>
+    </div>
   </div><!-- /.col-lg-4 -->
   <div class="col-lg-4">
 
@@ -123,7 +130,15 @@
       <li>Voice recognition, machine vision, and temperature sensors for tracking pig wellbeing</li>
       <li>Highly advanced disease detection in crops</li>
     </ul>
-    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+    <p class="btnWrapDetails"><a class="btn btn-secondary" href="#" onClick="insertDetails('AI')">View details &raquo;</a></p>
+    <div class="extraDetails" id="AI">
+      <p>Robotics and deep learning can be used to identify affected pesticides and illustrate crop yield maps.</p>
+      <p>Water irrigation can also be managed.</p>
+      <p>Using this can reduce water usage while maintaining crop yield, thus having less wasteage.</p>
+      <img src="https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6488907/9762554/9103523/misra3-2998584-small.gif" alt="Types of Machine Learning">
+      <p>Example: Boschs <i>Deepfield Connect</i> provides solutions to monitor fields for different parameters. Each solution consists of a set of sensors connected to the internet which in turn sends data to Cloud, sending alerts to the farmer's computer.</p>
+      <p class="reference">N. N. Misra, Y. Dixit, A. Al-Mallahi, M. S. Bhullar, R. Upadhyay and A. Martynenko, "IoT, Big Data, and Artificial Intelligence in Agriculture and Food Industry," in IEEE Internet of Things Journal, vol. 9, no. 9, pp. 6305-6324, 1 May1, 2022, doi: 10.1109/JIOT.2020.2998584.</p
+    </div>
   </div><!-- /.col-lg-4 -->
   <div class="col-lg-4">
 
@@ -133,7 +148,23 @@
       <li>Used for resource management, like tracking other sensors and equipment</li>
       <li>e.g. maintaining machinery records</li>
     </ul>
-    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+    <p class="btnWrapDetails"><a class="btn btn-secondary" href="#" onClick="insertDetails('BlockChain')">View details &raquo;</a></p>
+    <div class="extraDetails" id="BlockChain">
+      <p>Blockchain is like an <strong>online ledger</strong> of transactions</p>
+      <p>Every transaction is circulated through a network of computers running the blockchain protocol, and is validated</p>
+      <h3>Food Supply Chain</h3>
+      <p>Food supply chains worldwide are highly multi-actor based, with actors like farmers, shipping companies, etc. </p>
+      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0924224418303686-gr2.jpg" alt="Blockchain representation of flow of food supply">
+      <p class="reference">Andreas Kamilaris, Agusti Fonts, Francesc X. Prenafeta-Boldύ,
+        The rise of blockchain technology in agriculture and food supply chains,
+        Trends in Food Science & Technology,
+        Volume 91,
+        2019,
+        Pages 640-652,
+        ISSN 0924-2244,
+        https://doi.org/10.1016/j.tifs.2019.07.034.
+        (https://www.sciencedirect.com/science/article/pii/S0924224418303686)</p>
+    </div>
   </div><!-- /.col-lg-4 -->
 </div><!-- /.row -->
 
@@ -147,3 +178,4 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="pageEffects.js"></script>
