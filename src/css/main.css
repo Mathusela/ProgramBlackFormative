@@ -1,0 +1,20 @@
+:root {
+	--base-color-1: rgb(252, 252, 252);
+	--base-color-2: rgb(240, 240, 240);
+
+	--color: var(--base-color-1);
+}
+
+.fw-bg {
+	box-shadow: 0 0 0 100vmax var(--color);
+	clip-path: inset(0 -100vmax);
+	background: var(--color);
+}
+
+.section-block>section:nth-child(odd) {
+	--color: var(--base-color-1);
+}
+
+.section-block>section:nth-child(even) {
+	--color: var(--base-color-2);
+}

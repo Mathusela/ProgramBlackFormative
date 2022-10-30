@@ -52,18 +52,14 @@
 	display: none;
 }
 
-.navbar-container .nav-fade {
+nav .nav-fade {
 	transition: opacity 0.3s;
 }
 
-.navbar-container .nav-fade:hover {
+nav .nav-fade:hover {
 	opacity: 100% !important;
 }
 
-.navbar-container:hover .nav-fade:not(hover) {
+nav:hover .nav-fade:not(hover) {
 	opacity: 30%;
-}
-
-.navbar-container {
-	width: auto;
 }
