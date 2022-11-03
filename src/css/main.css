@@ -18,3 +18,8 @@
 .section-block>section:nth-child(even) {
 	--color: var(--base-color-2);
 }
+
+.carousel-item>img {
+	height: 30rem;
+	object-fit: cover;
+}
