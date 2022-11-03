@@ -1,0 +1,53 @@
+body {
+    background-image: url('healthcare.webp');
+    font-family: monospace;
+    color: white;
+    font-size: 15px;
+  }
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.scrollspy-example {
+    background-image: url('healthcare.webp');
+}
+.navbar {
+    background-image: url('healthcare.webp');
+}
+
+.header {
+    font-size: 30px;
+}
+
+/* .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+
+
+/* .row {
+    display: flex;
+  }
+  
+.column {
+    flex: 0.0003%;
+    padding: 5px;
+  } */
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  
