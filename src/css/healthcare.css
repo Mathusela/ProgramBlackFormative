@@ -1,5 +1,5 @@
 body {
-    background-image: url('healthcare.webp');
+    background-image: url('../../resources/healthcare.webp');
     font-family: monospace;
     color: white;
     font-size: 15px;
@@ -12,10 +12,10 @@ body {
 }
 
 .scrollspy-example {
-    background-image: url('healthcare.webp');
+    background-image: url('../../resources/healthcare.webp');
 }
 .navbar {
-    background-image: url('healthcare.webp');
+    background-image: url('../../resources/healthcare.webp');
 }
 
 .header {
