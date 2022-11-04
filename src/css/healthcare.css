@@ -1,5 +1,5 @@
 body {
-    background-image: url('../../resources/healthcare.webp');
+    /*background-image: url('../../resources/healthcare.webp'); */
     font-family: monospace;
     color: white;
     font-size: 15px;
@@ -12,14 +12,16 @@ body {
 }
 
 .scrollspy-example {
-    background-image: url('../../resources/healthcare.webp');
+    /*background-image: url('../../resources/healthcare.webp'); */
 }
 .navbar {
-    background-image: url('../../resources/healthcare.webp');
+    /*background-image: url('../../resources/healthcare.webp'); */
 }
 
 .header {
     font-size: 30px;
+    font-weight: 400;
+    padding: 20px;
 }
 
 /* .column {
